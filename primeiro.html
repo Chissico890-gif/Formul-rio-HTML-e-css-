@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Frederico Aurelio Chissico">
+    <meta name="description" content="este um exemplo pratico de um formulario feito com css e html">
+    <meta name="keywords" content="css formulario,formulario, html e css, html formulario">
+    <title>primeiro</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <h1>Dados Pessoais</h1>
+        <fieldset>
+        <label for="campo_nome">Nome:</label>
+        <input id="campo_nome" required type="text" placeholder="digita o teu nome">
+        <br>
+        <br>
+        <label for="endereco">Email:</label> 
+        <input id="endereco" required type="email" placeholder="digita o endereco"></p>
+        <label for="city">Cidade: </label>
+        <input id="city" required type="text" placeholder="nome da cidade"></p>
+        <label for="senha">Senha:</label>
+        <input id="senha" required type="password" placeholder="digita a senha">
+        <h3>Provincia:</h3>
+        <select> 
+            <option value="Maputo"> Maputo</option>
+            <option value=" Gaza"> Gaza </option>
+            <option value="Inhembane"> Inhembane </option>
+            <option value=" Sofala"> Sofala </option>
+            <option value=" Niassa"> Niassa </option>
+            <option value=" Zambezia"> Zambezia </option>
+            <option value=" Tete"> Tete </option>
+            <option value=" Nampula"> Nampula </option>
+            <option value=" Cabo-Delgado"> Cabo-Delgado </option>
+            <option value=" Maputo-Cidade"> Maputo-Cidade </option>
+            <option value=" Manica"> Manica </option>    
+        </select>
+        </fieldset>
+        <h2>Dados Profissionais</h2>
+        <fieldset>
+        <fieldset style="width: 17%;"><h3>Natureza do cargo</h3></fieldset>
+        <input type="radio" id="ger" name="cargo" value="Gerencia">
+        <label for="ger">Gerencia</label>
+        <input type="radio" id="fi" name="cargo" value="Financeiro">
+        <label for="fi">Financeiro</label>
+        <input type="radio" id="rec" name="cargo" value="Recepcao">
+        <label for="rec">Recepcao</label>
+        <input type="radio" id="admin" name="cargo" value="Administrativo">
+        <label for="admin">Administrativo</label>
+        <input type="radio" id="juri" name="cargo" value="Juridico">
+        <label for="juri">Juridico</label>
+        <h3>Area de interesse</h3>
+        <input type="checkbox" id="compu" name="compu" value="Computacao">
+        <label for="compu">computacao</label>
+        <input type="checkbox" id="bio" name="bio" value="Biologia">
+        <label for="bio">Biologia</label>
+        <input type="checkbox" id="meio" name="meio" value="Meio Ambiente">
+        <label for="meio">Meio Ambiente</label>
+        <input type="checkbox" id="eng" name="eng" value="Engenharia">
+        <label for="eng">Engenharia</label>
+        <input type="checkbox" id="his" name="his" value="Historia">
+        <label for="his">Historia</label>
+        <p>Mini-curriculo:</p>
+        <textarea maxlength="250" rows="20" cols="50" placeholder="fale um pouco de ti"></textarea>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="Deletar">
+    </form>
+    <br>
+</body>
+</html>
